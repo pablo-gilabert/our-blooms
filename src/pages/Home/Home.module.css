@@ -1,0 +1,42 @@
+.home {
+    display: grid;
+}
+
+.image, .purpleFlower {
+    width: 80%;
+    
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: var(--font-black);
+
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-weight: var(--font-semibold);
+
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
+    text-align: center;
+}
+
+.baseline {
+    height: 1px;
+    width: 100%;
+
+    background-color: black;
+
+    margin-bottom: 3rem;
+}

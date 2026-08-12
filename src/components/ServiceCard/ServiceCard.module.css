@@ -1,0 +1,53 @@
+.card {
+    display: grid;
+}
+
+.id {
+    font-weight: var(--font-black);
+    font-size: 1.5rem;
+
+    text-align: center;
+    
+    margin-top: 3rem;
+}
+
+.image {
+    width: 40%;
+
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.title {
+    font-weight: var(--font-black);
+    font-size: 1.5rem;
+    
+    width: 70%;
+
+    text-align: center;
+
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.subtitle {
+    font-weight: var(--font-semibold);
+    font-size: 1rem;
+    
+    width: 70%;
+
+    text-align: center;
+
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.baseline {
+    height: 1px;
+    width: 80%;
+    
+    background-color: black;
+
+    margin: 0 auto;
+    margin-top: 3rem;
+}

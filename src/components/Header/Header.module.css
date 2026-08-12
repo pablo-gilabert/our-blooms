@@ -1,0 +1,12 @@
+.logo {
+    display: grid;
+    justify-content: center;
+
+    width: 80%;
+
+    margin: 0 auto;
+}
+
+.logo img {
+    margin-top: 2rem;
+}

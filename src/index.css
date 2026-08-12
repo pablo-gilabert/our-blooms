@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --button-color: rgb(255, 200, 0);
+
+  --font-primary: "Inter", sans-serif;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-black: 900;
+}
+
+
 *,
 *::before,
 *::after {
@@ -12,6 +27,7 @@ html {
 
 body {
   min-height: 100vh;
+  font-family: var(--font-primary);
 }
 
 img,

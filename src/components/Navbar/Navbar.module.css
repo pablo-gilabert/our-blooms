@@ -1,0 +1,71 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-top: 0.5rem;
+
+    overflow: hidden;
+}
+
+.logo {
+    justify-self: start;
+    align-self: center;
+
+    height: 1.5rem;
+
+    margin-left: 2rem;
+}
+
+.menu {
+    border: none;
+    background-color: transparent;
+
+    justify-self: end;
+    align-self: center;
+
+    margin-right: 2rem;
+}
+
+.menu svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.dropdown {
+    grid-column: 1 / -1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+
+    padding: 0rem 2rem;
+
+    max-height: 0;
+    opacity: 0;
+
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        padding 0.4s ease;
+}
+
+.navbarOpen .dropdown {
+    max-height: 400px;
+
+    padding: 1rem 2rem;
+
+    opacity: 1;
+}
+
+.baseline {
+    grid-column: 1 / -1;
+    justify-self: center;
+
+    height: 1px;
+    width: 90%;
+
+    background-color: black;
+
+    margin-top: 0.5rem;
+}
