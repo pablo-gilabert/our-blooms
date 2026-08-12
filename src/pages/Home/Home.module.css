@@ -3,9 +3,12 @@
 }
 
 .image, .purpleFlower {
+    display: flex;
+    justify-content: center;
+}
+
+.image img, .purpleFlower img {
     width: 80%;
-    
-    margin: 0 auto;
     margin-top: 10rem;
 }
 
@@ -39,4 +42,41 @@
     background-color: black;
 
     margin-bottom: 3rem;
+}
+
+.imageTablet, .purpleFlowerTablet {
+    display: none;
+}
+
+.servicesTablet {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .servicesMobile {
+        display: none;
+    }
+
+    .servicesTablet {
+        display: block;
+    }
+
+    .image, .purpleFlower {
+        display: none;
+    }
+
+    .imageTablet, .purpleFlowerTablet {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imageTablet img, .purpleFlowerTablet img {
+        width: 70%;
+        margin-top: 10rem;
+    }
+
+    .purpleFlowerTablet img {
+        width: 85%;
+    }
 }

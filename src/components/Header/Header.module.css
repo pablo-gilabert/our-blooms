@@ -10,3 +10,27 @@
 .logo img {
     margin-top: 2rem;
 }
+
+.logoTablet {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .logo {
+        display: none;
+    }
+
+    .logoTablet {
+        display: grid;
+        justify-content: center;
+
+        width: 80%;
+
+        margin: 0 auto;
+    }
+
+    .logoTablet img {
+        margin-top: 5rem;
+    }
+}

@@ -6,3 +6,23 @@
     margin: 0 auto;
     margin-top: 8rem;
 }
+
+.footerTablet {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .footer {
+        display: none;
+    }
+
+    .footerTablet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0 auto;
+        margin-top: 8rem; 
+    }
+}

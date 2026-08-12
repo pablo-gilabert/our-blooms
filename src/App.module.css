@@ -1,0 +1,18 @@
+.navbarMobile {
+    display: block;
+}
+
+.navbarDesktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .navbarMobile {
+        display: none;
+    }
+
+    .navbarDesktop {
+        display: block;
+    }
+}

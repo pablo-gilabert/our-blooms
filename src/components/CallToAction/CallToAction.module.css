@@ -29,3 +29,20 @@
     padding: 0.5rem 1rem;
     border-radius: 10px;
 }
+
+@media (min-width: 768px) {
+
+    .section {
+        width: 40%;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        font-weight: var(--font-black);
+    }
+
+    .button {
+        font-size: 1rem;
+        font-weight: var(--font-semibold);
+    }
+}

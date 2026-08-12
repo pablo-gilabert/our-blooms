@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { FiMenu } from "react-icons/fi"
+import { NavLink } from "react-router-dom"
 
 import styles from "./Navbar.module.css"
 
@@ -31,9 +32,9 @@ const Navbar = () => {
       </button>
 
       <nav className={styles.dropdown}>
-        <a href="/">HOME</a>
-        <a href="/gallery">GALLERY</a>
-        <a href="/about">ABOUT</a>
+        <NavLink to="/">HOME</NavLink>
+        <NavLink to="/gallery">GALLERY</NavLink>
+        <NavLink to="/about">ABOUT</NavLink>
       </nav>
 
       <div className={styles.baseline}></div>

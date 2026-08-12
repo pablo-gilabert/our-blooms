@@ -4,12 +4,21 @@ const Footer = () => {
 
   return (
     
-    <div className={styles.footer}>
-        <img
-            src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786492009/Image_dgjded.jpg" 
-            alt="" 
+    <>
+      <div className={styles.footer}>
+          <img
+              src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786492009/Image_dgjded.jpg" 
+              alt="Footer image" 
+          />
+      </div>
+
+      <div className={styles.footerTablet}>
+        <img 
+          src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786572998/Image_slbf3h.jpg" 
+          alt="Footer image" 
         />
-    </div>
+      </div>
+    </>
   )
 }
 

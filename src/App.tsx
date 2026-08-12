@@ -4,13 +4,23 @@ import Navbar from "./components/Navbar/Navbar"
 import About from "./pages/About/About"
 import Gallery from "./pages/Gallery/Gallery"
 import Home from "./pages/Home/Home"
+import NavbarDesktop from "./components/NavbarDesktop/NavbarDesktop"
+
+import styles from "./App.module.css"
 
 function App() {
 
   return (
 
     <>
-      <Navbar/>
+      <div className={styles.navbarMobile}>
+        <Navbar/>
+      </div>
+
+      <div className={styles.navbarDesktop}>
+        <NavbarDesktop/>
+      </div>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
