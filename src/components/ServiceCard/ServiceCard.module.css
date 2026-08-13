@@ -62,3 +62,9 @@
         width: 20%;
     }
 }
+
+@media (min-width: 1280px) {
+    .image {
+        width: 10%;
+    }
+}

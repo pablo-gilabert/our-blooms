@@ -18,6 +18,13 @@ const Footer = () => {
           alt="Footer image" 
         />
       </div>
+
+      <div className={styles.footerDesktop}>
+        <img 
+          src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786582042/Image_amyrep.png" 
+          alt="Footer image" 
+        />
+      </div>
     </>
   )
 }

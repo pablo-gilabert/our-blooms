@@ -27,6 +27,18 @@ const Header = () => {
               alt="Seasonal offer" 
           />
       </div>  
+
+      {/*---HEADER DESKTOP---*/}
+      <div className={styles.logoDesktop}>
+          <img
+              src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786577263/Logo_Image_qrlaqc.png" 
+              alt="Our blooms" 
+          />
+          <img 
+              src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786577154/Image_izfje0.png" 
+              alt="Seasonal offer" 
+          />
+      </div>  
     </> 
 
   )

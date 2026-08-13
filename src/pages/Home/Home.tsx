@@ -1,9 +1,7 @@
 import Header from "../../components/Header/Header"
 import CallToAction from "../../components/CallToAction/CallToAction"
 import Footer from "../../components/Footer/Footer"
-
-import ServicesMobile from "../../components/ServicesMobile/ServicesMobile"
-import ServicesTablet from "../../components/ServicesTablet/ServicesTablet"
+import Services from "../../components/Services/Services"
 
 import styles from "./Home.module.css"
 
@@ -39,6 +37,14 @@ const Home = () => {
           />
         </div>
 
+        {/*---DECORATIVE IMAGE DESKTOP---*/}
+        <div className={styles.imageDesktop}>
+          <img
+            src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786577507/Image_1_ahok5t.png" 
+            alt="Presentation image" 
+          />
+        </div>
+
         {/*---TITLE + SUBTITLE + LINE---*/}
         <div className={styles.container}>
 
@@ -47,14 +53,9 @@ const Home = () => {
           <div className={styles.baseline}></div>
         </div>
 
-        {/*---SERVICES MOBILE---*/}
-        <div className={styles.servicesMobile}>
-          <ServicesMobile/>
-        </div>
-
-        {/*---SERVICES TABLET---*/}
-        <div className={styles.servicesTablet}>
-          <ServicesTablet/>
+        {/*---SERVICES---*/}
+        <div className={styles.services}>
+          <Services/>
         </div>
 
         {/*---DECORATIVE IMAGE MOBILE---*/}
@@ -69,6 +70,14 @@ const Home = () => {
         <div className={styles.purpleFlowerTablet}>
           <img
             src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786571882/Image_nufa82.jpg" 
+            alt="Purple flower" 
+          />
+        </div>
+
+        {/*---DECORATIVE IMAGE DESKTOP---*/}
+        <div className={styles.purpleFlowerDesktop}>
+          <img
+            src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786577681/Image_k6k3sy.png" 
             alt="Purple flower" 
           />
         </div>

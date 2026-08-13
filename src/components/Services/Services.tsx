@@ -1,13 +1,13 @@
 import ServiceCard from "../ServiceCard/ServiceCard"
-import servicesTablet from "../../data/servicesTablet"
+import services from "../../data/services"
 
-const ServicesTablet = () => {
+const Services = () => {
 
   return (
 
     <main>
 
-      {servicesTablet.map((service) => (
+      {services.map((service) => (
 
         <ServiceCard
 
@@ -20,4 +20,4 @@ const ServicesTablet = () => {
   )
 }
 
-export default ServicesTablet
+export default Services

@@ -7,22 +7,34 @@
     margin-top: 8rem;
 }
 
-.footerTablet {
+.footerTablet, .footerDesktop {
     display: none;
 }
 
 @media (min-width: 768px) {
 
-    .footer {
+    .footer, .footerDesktop {
         display: none;
     }
 
     .footerTablet {
         display: flex;
         justify-content: center;
-        align-items: center;
 
-        margin: 0 auto;
         margin-top: 8rem; 
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .footer, .footerTablet {
+        display: none;
+    }
+
+    .footerDesktop {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 8rem;
     }
 }
