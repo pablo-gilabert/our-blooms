@@ -1,4 +1,4 @@
-const servicesMobile = [
+const services = [
   {
     id: 1,
     img: "https://res.cloudinary.com/t1xhl1kz/image/upload/v1786487718/Image_ez1jdd.jpg",
@@ -23,4 +23,4 @@ const servicesMobile = [
   },
 ]
 
-export default servicesMobile
+export default services

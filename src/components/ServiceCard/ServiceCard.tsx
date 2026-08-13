@@ -1,32 +1,47 @@
 import styles from "./ServiceCard.module.css"
 
 interface ServiceCardProps {
-
-  id: number
+  id?: number
   img: string
   title: string
   subtitle: string
+  variant?: "home" | "gallery"
 }
 
 // ServiceCard component.
 //
-// Receives the data of an individual service and displays
-// its identifier, image, title, subtitle, and separator.
+// Displays a service using a different layout depending
+// on the selected variant.
 const ServiceCard = ({
-
   id,
   img,
   title,
   subtitle,
-
+  variant = "home",
 }: ServiceCardProps) => {
 
   return (
-    
-    <article className={styles.card}>
+    <article
+      className={`${styles.card} ${
+        variant === "gallery" ? styles.cardGallery : ""
+      }`}
+    >
 
-      {/* Displays the service identifier. */}
-      <span className={styles.id}>{id}</span>
+      {/* Displays the service identifier only in the Home variant. */}
+      {variant === "home" && id !== undefined && (
+        <span className={styles.id}>{id}</span>
+      )}
+
+      {/* Contains the service title and description. */}
+      <div className={styles.content}>
+
+        {/* Displays the service title. */}
+        <h2 className={styles.title}>{title}</h2>
+
+        {/* Displays the service description. */}
+        <p className={styles.subtitle}>{subtitle}</p>
+
+      </div>
 
       {/* Displays the image representing the service. */}
       <img
@@ -34,12 +49,6 @@ const ServiceCard = ({
         src={img}
         alt={`${title} service`}
       />
-
-      {/* Displays the service title. */}
-      <h2 className={styles.title}>{title}</h2>
-
-      {/* Displays the service description. */}
-      <p className={styles.subtitle}>{subtitle}</p>
 
       {/* Separates this service from the next one. */}
       <div className={styles.baseline} />

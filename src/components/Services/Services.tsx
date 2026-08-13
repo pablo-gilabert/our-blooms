@@ -1,22 +1,42 @@
 import ServiceCard from "../ServiceCard/ServiceCard"
-import services from "../../data/services"
 
-const Services = () => {
+interface Service {
+  id?: number
+  img: string
+  title: string
+  subtitle: string
+}
+
+interface ServicesProps {
+  services: Service[]
+  variant?: "home" | "gallery"
+}
+
+// Services component.
+//
+// Receives a collection of services and renders a ServiceCard
+// for each item using the selected layout variant.
+const Services = ({
+  services,
+  variant = "home",
+}: ServicesProps) => {
 
   return (
+    <section>
 
-    <main>
+      <article>
 
-      {services.map((service) => (
+        {services.map((service, index) => (
+          <ServiceCard
+            key={service.id ?? index}
+            {...service}
+            variant={variant}
+          />
+        ))}
 
-        <ServiceCard
+      </article>
 
-          key={service.id}
-          {...service}
-        />
-      ))}
-
-    </main>
+    </section>
   )
 }
 

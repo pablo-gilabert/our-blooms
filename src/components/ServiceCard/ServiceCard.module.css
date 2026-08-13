@@ -52,6 +52,10 @@
     margin-top: 3rem;
 }
 
+.cardGallery img {
+    width: 80%;
+}
+
 @media (min-width: 768px) {
 
     .id, .title {
@@ -64,7 +68,20 @@
 }
 
 @media (min-width: 1280px) {
-    .image {
-        width: 10%;
+
+    .cardGallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        height: 600px;
+    }
+
+    .cardGallery img {
+       width: 80%; 
+    }
+
+    .baseline {
+        grid-column: 1 / -1;
     }
 }

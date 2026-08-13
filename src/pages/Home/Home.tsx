@@ -3,6 +3,8 @@ import CallToAction from "../../components/CallToAction/CallToAction"
 import Footer from "../../components/Footer/Footer"
 import Services from "../../components/Services/Services"
 
+import services from "../../data/services"
+
 import styles from "./Home.module.css"
 
 const Home = () => {
@@ -53,10 +55,10 @@ const Home = () => {
           <div className={styles.baseline}></div>
         </div>
 
-        {/*---SERVICES---*/}
-        <div className={styles.services}>
-          <Services/>
-        </div>
+        <Services 
+          services={services}
+          variant="home"
+        />
 
         {/*---DECORATIVE IMAGE MOBILE---*/}
         <div className={styles.purpleFlower}>
