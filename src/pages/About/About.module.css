@@ -1,0 +1,66 @@
+.title {
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+    font-size: 2rem;
+    font-weight: var(--font-black);
+}
+
+.subtitle {
+    margin-top: 1rem;
+    margin-left: 2rem;
+
+    font-size: 1rem;
+    font-weight: var(--font-semibold);
+}
+
+.image {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.owner {
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+    font-size: 1rem;
+    font-weight: var(--font-black);
+}
+
+.h2 {
+    font-size: 1.5rem;
+    font-weight: var(--font-black);
+
+    margin-top: 5rem;
+    width: 75%;
+
+    text-align: start;
+    margin-left: 2rem;
+}
+
+.images {
+    width: 80%;
+    margin: 0 auto;
+
+    margin-top: 5rem;
+}
+
+.images img {
+    margin-top: 2rem;
+}
+
+.historyContainer {
+    margin-top: 5rem;
+}
+
+.history {
+    font-size: 1rem;
+    font-weight: var(--font-semibold);
+
+    text-align: center;
+    width: 70%;
+
+    margin: 0 auto;
+    margin-top: 3rem;
+}
