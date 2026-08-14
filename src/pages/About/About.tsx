@@ -11,23 +11,25 @@ const About = () => {
 
       <p className={styles.subtitle}>OUR STORY</p>
 
-      <div className={styles.image}>
-        <img
-          src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786654963/Image_yucxxy.png" 
-          alt="Lily Smith, owner" 
-        />
-      </div>
+      <div className={styles.introGrid}>
+        <div className={styles.ownerImage}>
+          <img
+            src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786654963/Image_yucxxy.png" 
+            alt="Lily Smith, owner" 
+          />
+        </div>
 
-      <div className={styles.owner}>
-        <h2>LILY SMITH</h2>
-        <p>Owner</p>
+        <div className={styles.owner}>
+          <h2>LILY SMITH</h2>
+          <p>Owner</p>
+        </div>
       </div>
 
       <h2 className={styles.h2}>
         Our Blooms was founded in honor of Lily Smith's loving aunts, Teresa and Beth.
       </h2>
 
-      <div className={styles.images}>
+      <div className={styles.gridImages}>
         <img src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786656658/Image_01_r8htli.png"/>
         <img src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786656657/Image_02_msbslq.png"/>
         <img src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786656657/Image_03_qv5fh6.png"/>
@@ -49,7 +51,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className={styles.images}>
+      <div className={styles.breakerImage}>
         <img src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786681647/Image_breaker_fq5kny.png"/>
       </div>
 
