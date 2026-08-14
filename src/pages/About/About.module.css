@@ -112,3 +112,21 @@
         width: 60%;
     }
 }
+
+@media (min-width: 1280px) {
+
+    .history {
+        font-size: 1.5rem;
+    }
+
+    .breakerImage {
+        display: flex;
+        justify-content: start;
+    }
+
+    .breakerImage img {
+        width: 40%;
+        margin-top: 10rem;
+        margin-bottom: 6rem;
+    }
+}
