@@ -5,6 +5,7 @@ import About from "./pages/About/About"
 import Gallery from "./pages/Gallery/Gallery"
 import Home from "./pages/Home/Home"
 import NavbarDesktop from "./components/NavbarDesktop/NavbarDesktop"
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop"
 
 import styles from "./App.module.css"
 
@@ -13,6 +14,8 @@ function App() {
   return (
 
     <>
+      <ScrollToTop/>
+
       <div className={styles.navbarMobile}>
         <Navbar/>
       </div>
