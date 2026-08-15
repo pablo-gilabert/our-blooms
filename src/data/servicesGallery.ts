@@ -1,5 +1,6 @@
 const servicesGallery = [
   {
+    id: 0,
     img: "https://res.cloudinary.com/t1xhl1kz/image/upload/v1786591089/Image_1_xg4ych.png",
     title: "FLORAL INSTALLATIONS",
     subtitle: 
@@ -7,6 +8,7 @@ const servicesGallery = [
     to grand events.`,
   },
   {
+    id: 1,
     img: "https://res.cloudinary.com/t1xhl1kz/image/upload/v1786591088/Image_xmkmn0.png",
     title: "NATIVE PLANT ARRANGEMENTS",
     subtitle: 
@@ -14,6 +16,7 @@ const servicesGallery = [
     elegance to your home.`,
   },
   {
+    id: 2,
     img: "https://res.cloudinary.com/t1xhl1kz/image/upload/v1786591088/Image_2_bb8z0x.png",
     title: "CUSTOM FLORAL CONCEPTS",
     subtitle: 
