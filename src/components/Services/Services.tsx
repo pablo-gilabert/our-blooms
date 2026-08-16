@@ -22,7 +22,6 @@ const Services = ({
 }: ServicesProps) => {
 
   return (
-    <section>
 
       <article>
 
@@ -35,8 +34,6 @@ const Services = ({
         ))}
 
       </article>
-
-    </section>
   )
 }
 
