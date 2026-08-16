@@ -1,52 +1,87 @@
 .card {
-  display: flex;
-  flex-direction: column;
-
-  width: 100%;
+    display: grid;
 }
 
 .id {
-  align-self: flex-start;
+    font-weight: var(--font-black);
+    font-size: 1.5rem;
 
-  margin-left: 1rem;
-
-  font-size: 0.8rem;
+    text-align: center;
+    
+    margin-top: 3rem;
 }
 
 .image {
-  display: block;
+    width: 40%;
 
-  width: 40%;
-
-  margin: 3rem auto 0;
+    margin: 0 auto;
+    margin-top: 3rem;
 }
 
 .title {
-  width: 80%;
+    font-weight: var(--font-black);
+    font-size: 1.5rem;
+    
+    width: 70%;
 
-  margin: 5rem auto 0;
+    text-align: center;
 
-  font-size: 1.5rem;
-  font-weight: var(--font-weight-bold);
-  text-align: center;
+    margin: 0 auto;
+    margin-top: 5rem;
 }
 
 .subtitle {
-  width: 80%;
+    font-weight: var(--font-semibold);
+    font-size: 1rem;
+    
+    width: 70%;
 
-  margin: 2rem auto 0;
+    text-align: center;
 
-  font-size: 1rem;
-  font-weight: var(--font-weight-regular);
-  line-height: 1.5;
-  text-align: center;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .baseline {
-  width: 90%;
-  height: 1px;
+    height: 1px;
+    width: 80%;
+    
+    background-color: black;
 
-  margin: 4rem auto 0;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
 
-  background-color: black;
+.cardGallery img {
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+
+    .id, .title {
+        font-size: 2rem;
+    }
+
+    .image {
+        width: 20%;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .cardGallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        height: 600px;
+    }
+
+    .cardGallery img {
+       width: 80%; 
+    }
+
+    .baseline {
+        grid-column: 1 / -1;
+    }
 }

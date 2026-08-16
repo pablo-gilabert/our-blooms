@@ -7,28 +7,51 @@
     margin: 0 auto;
 }
 
-.logo picture {
-    display: contents;
-}
-
 .logo img {
     margin-top: 2rem;
 }
 
+.logoTablet, .logoDesktop {
+    display: none;
+}
+
 @media (min-width: 768px) {
 
-    .logo img {
+    .logo {
+        display: none;
+    }
+
+    .logoTablet {
+        display: grid;
+        justify-content: center;
+
+        width: 80%;
+
+        margin: 0 auto;
+    }
+
+    .logoTablet img {
         margin-top: 5rem;
     }
 }
 
 @media (min-width: 1280px) {
 
-    .logo {
+    .logoTablet {
+        display: none;
+    }
+
+    .logoDesktop {
+        display: grid;
+        justify-content: center;
+
+        width: 80%;
+        margin: 0 auto;
+
         margin-top: 5rem;
     }
 
-    .logo img {
+    .logoDesktop img {
         margin-top: 4rem;
     }
 }

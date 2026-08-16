@@ -13,86 +13,90 @@ const Home = () => {
 
     <div className={styles.home}>
 
-      <Header/>
+        <Header/>
 
-      {/*---TITLE + SUBTITLE + BUTTON---*/}
-      <CallToAction
-        title="WHO WE ARE"
-        subtitle="We're Our Blooms® and we're here to help you find your floral story."
-        buttonText="ABOUT US"
-        buttonLink="/about"
-      />
-
-      {/*---DECORATIVE IMAGE---*/}
-      <picture className={styles.image}>
-
-        <source
-          media="(min-width: 1280px)"
-          srcSet="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786577507/Image_1_ahok5t.png"
+        {/*---TITLE + SUBTITLE + BUTTON---*/}
+        <CallToAction 
+          title="WHO WE ARE" 
+          subtitle="We're Our Blooms® and we're here to help you find your floral story." 
+          buttonText="ABOUT US" 
+          buttonLink="/about"
         />
 
-        <source
-          media="(min-width: 768px)"
-          srcSet="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786555949/Image_tskhrj.png"
+        {/*---DECORATIVE IMAGE MOBILE---*/}
+        <div className={styles.image}>
+          <img
+            src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786486532/Image_breaker_wz7wh0.png" 
+            alt="Presentation image" 
+          />
+        </div>
+
+        {/*---DECORATIVE IMAGE TABLET---*/}
+        <div className={styles.imageTablet}>
+          <img
+            src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786555949/Image_tskhrj.png" 
+            alt="Presentation image" 
+          />
+        </div>
+
+        {/*---DECORATIVE IMAGE DESKTOP---*/}
+        <div className={styles.imageDesktop}>
+          <img
+            src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786577507/Image_1_ahok5t.png" 
+            alt="Presentation image" 
+          />
+        </div>
+
+        {/*---TITLE + SUBTITLE + LINE---*/}
+        <div className={styles.container}>
+
+          <p className={styles.title}>WHAT WE DO</p>
+          <p className={styles.subtitle}>We bring a touch of that simple magic into your world.</p>
+          <div className={styles.baseline}></div>
+        </div>
+
+        <Services 
+          services={services}
+          variant="home"
         />
 
-        <img
-          src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786486532/Image_breaker_wz7wh0.png"
-          alt="Presentation image"
+        {/*---DECORATIVE IMAGE MOBILE---*/}
+        <div className={styles.purpleFlower}>
+          <img
+            src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786490600/Image_qrzl3a.jpg" 
+            alt="Purple flower" 
+          />
+        </div>
+
+        {/*---DECORATIVE IMAGE TABLET---*/}
+        <div className={styles.purpleFlowerTablet}>
+          <img
+            src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786571882/Image_nufa82.jpg" 
+            alt="Purple flower" 
+          />
+        </div>
+
+        {/*---DECORATIVE IMAGE DESKTOP---*/}
+        <div className={styles.purpleFlowerDesktop}>
+          <img
+            src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786577681/Image_k6k3sy.png" 
+            alt="Purple flower" 
+          />
+        </div>
+
+        {/*---TITLE + SUBTITLE + BUTTON---*/}
+        <CallToAction 
+          title="WORK WITH US" 
+          subtitle="Discover how we can add a touch of natural beauty to your next event." 
+          buttonText="ABOUT US" 
+          buttonLink="/about"
         />
 
-      </picture>
-
-      {/*---TITLE + SUBTITLE + LINE---*/}
-      <div className={styles.container}>
-
-        <p className={styles.title}>WHAT WE DO</p>
-
-        <p className={styles.subtitle}>
-          We bring a touch of that simple magic into your world.
-        </p>
-
-        <div className={styles.baseline}></div>
-
-      </div>
-
-      <Services
-        services={services}
-        variant="home"
-      />
-
-      {/*---DECORATIVE IMAGE---*/}
-      <picture className={styles.purpleFlower}>
-
-        <source
-          media="(min-width: 1280px)"
-          srcSet="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786577681/Image_k6k3sy.png"
-        />
-
-        <source
-          media="(min-width: 768px)"
-          srcSet="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786571882/Image_nufa82.jpg"
-        />
-
-        <img
-          src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786490600/Image_qrzl3a.jpg"
-          alt="Purple flower"
-        />
-
-      </picture>
-
-      {/*---TITLE + SUBTITLE + BUTTON---*/}
-      <CallToAction
-        title="WORK WITH US"
-        subtitle="Discover how we can add a touch of natural beauty to your next event."
-        buttonText="ABOUT US"
-        buttonLink="/about"
-      />
-
-      {/*---FOOTER---*/}
-      <Footer/>
+        {/*---FOOTER---*/}
+        <Footer/>
 
     </div>
+
   )
 }
 

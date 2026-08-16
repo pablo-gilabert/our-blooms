@@ -1,6 +1,4 @@
-import type { service } from "../types/service"
-
-const services: service[] = [
+const services = [
   {
     id: 1,
     img: "https://res.cloudinary.com/t1xhl1kz/image/upload/v1786487718/Image_ez1jdd.jpg",
@@ -18,7 +16,8 @@ const services: service[] = [
     id: 3,
     img: "https://res.cloudinary.com/t1xhl1kz/image/upload/v1786487780/Image_ojynr0.jpg",
     title: "CUSTOM FLORAL CONCEPTS",
-    subtitle: `Your vision, our blooms. We build arrangements that are both personal and exquisitely simple. 
+    subtitle: 
+    `Your vision, our blooms. We build arrangements that are both personal and exquisitely simple. 
     Whether it's a private retreat or a public space, we craft floral experiences that bloom beyond 
     expectations.`,
   },
