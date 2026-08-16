@@ -1,17 +1,15 @@
+import type { service } from "../../types/service"
+
 import styles from "./ServiceCard.module.css"
 
-interface ServiceCardProps {
-  id: number
-  img: string
-  title: string
-  subtitle: string
+interface ServiceCardProps extends service {
   variant?: "home" | "gallery"
 }
 
 // ServiceCard component.
 //
 // Receives the data of an individual service and displays
-// its content using a different layout depending on the variant.
+// its content using the selected layout variant.
 const ServiceCard = ({
   id,
   img,

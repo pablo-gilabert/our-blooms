@@ -7,51 +7,28 @@
     margin: 0 auto;
 }
 
+.logo picture {
+    display: contents;
+}
+
 .logo img {
     margin-top: 2rem;
 }
 
-.logoTablet, .logoDesktop {
-    display: none;
-}
-
 @media (min-width: 768px) {
 
-    .logo {
-        display: none;
-    }
-
-    .logoTablet {
-        display: grid;
-        justify-content: center;
-
-        width: 80%;
-
-        margin: 0 auto;
-    }
-
-    .logoTablet img {
+    .logo img {
         margin-top: 5rem;
     }
 }
 
 @media (min-width: 1280px) {
 
-    .logoTablet {
-        display: none;
-    }
-
-    .logoDesktop {
-        display: grid;
-        justify-content: center;
-
-        width: 80%;
-        margin: 0 auto;
-
+    .logo {
         margin-top: 5rem;
     }
 
-    .logoDesktop img {
+    .logo img {
         margin-top: 4rem;
     }
 }

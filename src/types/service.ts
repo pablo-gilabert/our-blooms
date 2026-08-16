@@ -1,4 +1,4 @@
-export interface Service {
+export interface service {
   id: number
   img: string
   title: string

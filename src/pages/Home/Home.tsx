@@ -1,7 +1,7 @@
 import Header from "../../components/Header/Header"
 import CallToAction from "../../components/CallToAction/CallToAction"
-import Services from "../../components/Services/Services"
 import Footer from "../../components/Footer/Footer"
+import Services from "../../components/Services/Services"
 
 import services from "../../data/services"
 
@@ -13,8 +13,9 @@ const Home = () => {
 
     <div className={styles.home}>
 
-      <Header />
+      <Header/>
 
+      {/*---TITLE + SUBTITLE + BUTTON---*/}
       <CallToAction
         title="WHO WE ARE"
         subtitle="We're Our Blooms® and we're here to help you find your floral story."
@@ -22,6 +23,7 @@ const Home = () => {
         buttonLink="/about"
       />
 
+      {/*---DECORATIVE IMAGE---*/}
       <picture className={styles.image}>
 
         <source
@@ -36,11 +38,12 @@ const Home = () => {
 
         <img
           src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786486532/Image_breaker_wz7wh0.png"
-          alt="Floral arrangement"
+          alt="Presentation image"
         />
 
       </picture>
 
+      {/*---TITLE + SUBTITLE + LINE---*/}
       <div className={styles.container}>
 
         <p className={styles.title}>WHAT WE DO</p>
@@ -58,11 +61,17 @@ const Home = () => {
         variant="home"
       />
 
+      {/*---DECORATIVE IMAGE---*/}
       <picture className={styles.purpleFlower}>
 
         <source
+          media="(min-width: 1280px)"
+          srcSet="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786577681/Image_k6k3sy.png"
+        />
+
+        <source
           media="(min-width: 768px)"
-          srcSet="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786490600/Image_qrzl3a.jpg"
+          srcSet="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786571882/Image_nufa82.jpg"
         />
 
         <img
@@ -72,6 +81,7 @@ const Home = () => {
 
       </picture>
 
+      {/*---TITLE + SUBTITLE + BUTTON---*/}
       <CallToAction
         title="WORK WITH US"
         subtitle="Discover how we can add a touch of natural beauty to your next event."
@@ -79,7 +89,8 @@ const Home = () => {
         buttonLink="/about"
       />
 
-      <Footer />
+      {/*---FOOTER---*/}
+      <Footer/>
 
     </div>
   )
