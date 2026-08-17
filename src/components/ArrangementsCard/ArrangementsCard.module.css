@@ -1,13 +1,12 @@
-.container, .image {
+.container,
+.image {
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
 .image {
-    justify-content: center;
     margin: 0 auto;
-
     width: 90%;
     margin-top: 0.6rem;
 }
@@ -20,13 +19,11 @@
 .title {
     font-size: 1rem;
     font-weight: var(--font-black);
-
     margin-left: 1rem;
 }
 
 .price {
     font-size: 1rem;
     font-weight: var(--font-semibold);
-
     margin-left: 1rem;
 }

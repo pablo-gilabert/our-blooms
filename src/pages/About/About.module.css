@@ -1,55 +1,42 @@
 .title {
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin: 2rem 0 0 2rem;
 
     font-size: 2rem;
     font-weight: var(--font-black);
 }
 
 .subtitle {
-    margin-top: 1rem;
-    margin-left: 2rem;
+    margin: 1rem 0 0 2rem;
 
     font-size: 1rem;
     font-weight: var(--font-semibold);
 }
 
-.ownerImage {
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 3rem;
-}
-
+.ownerImage,
 .breakerImage {
     width: 90%;
-    margin: 0 auto;
-    margin-top: 3rem;
+    margin: 3rem auto 0;
 }
 
 .owner {
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin: 2rem 0 0 2rem;
 
     font-size: 1rem;
     font-weight: var(--font-black);
 }
 
 .h2 {
+    width: 75%;
+    margin: 5rem 0 0 2rem;
+
     font-size: 1.5rem;
     font-weight: var(--font-black);
-
-    margin-top: 5rem;
-    width: 75%;
-
     text-align: start;
-    margin-left: 2rem;
 }
 
 .gridImages {
     width: 80%;
-    margin: 0 auto;
-
-    margin-top: 5rem;
+    margin: 5rem auto 0;
 }
 
 .gridImages img {
@@ -61,14 +48,12 @@
 }
 
 .history {
+    width: 70%;
+    margin: 3rem auto 0;
+
     font-size: 1rem;
     font-weight: var(--font-semibold);
-
     text-align: center;
-    width: 70%;
-
-    margin: 0 auto;
-    margin-top: 3rem;
 }
 
 @media (min-width: 768px) {
@@ -76,12 +61,12 @@
     .introGrid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        grid-template-rows: 1fr;
     }
 
     .owner {
-        margin-top: 5rem;
         grid-column: 2;
+        margin-top: 5rem;
     }
 
     .ownerImage {
@@ -89,10 +74,8 @@
     }
 
     .h2 {
-        margin: 0 auto;
         width: 80%;
-
-        margin-top: 10rem;
+        margin: 10rem auto 0;
     }
 
     .gridImages {
@@ -120,7 +103,6 @@
     }
 
     .breakerImage {
-        display: flex;
         justify-content: start;
     }
 

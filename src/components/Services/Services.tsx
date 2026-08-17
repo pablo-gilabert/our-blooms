@@ -1,11 +1,6 @@
 import ServiceCard from "../ServiceCard/ServiceCard"
 
-interface Service {
-  id?: number
-  img: string
-  title: string
-  subtitle: string
-}
+import type { Service } from "../../types/Service"
 
 interface ServicesProps {
   services: Service[]
@@ -23,17 +18,19 @@ const Services = ({
 
   return (
 
-      <article>
+    <article>
 
-        {services.map((service, index) => (
-          <ServiceCard
-            key={service.id ?? index}
-            {...service}
-            variant={variant}
-          />
-        ))}
+      {services.map((service) => (
 
-      </article>
+        <ServiceCard
+          key={service.id}
+          {...service}
+          variant={variant}
+        />
+
+      ))}
+
+    </article>
   )
 }
 

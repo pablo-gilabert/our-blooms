@@ -1,25 +1,28 @@
-.navbarMobile {
-  display: block;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: white;
-}
-
+.navbarMobile,
 .navbarDesktop {
-  display: none;
+    z-index: 1000;
+    background-color: white;
 }
 
-@media (min-width: 768px) {
-  .navbarMobile {
-    display: none;
-  }
-
-  .navbarDesktop {
+.navbarMobile {
     display: block;
     position: sticky;
     top: 0;
-    z-index: 1000;
-    background-color: white;
-  }
+}
+
+.navbarDesktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .navbarMobile {
+        display: none;
+    }
+
+    .navbarDesktop {
+        display: block;
+        position: sticky;
+        top: 0;
+    }
 }

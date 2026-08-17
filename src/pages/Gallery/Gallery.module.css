@@ -1,31 +1,29 @@
 .title {
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin: 2rem 0 0 2rem;
 
     font-size: 2rem;
     font-weight: var(--font-black);
 }
 
 .subtitle {
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin: 2rem 0 0 2rem;
 
     font-size: 1rem;
     font-weight: var(--font-semibold);
 }
 
 .h2 {
+    margin: 5rem 0 1.5rem 2rem;
+
     font-size: 1rem;
     font-weight: var(--font-semibold);
-
-    margin: 5rem 0rem 1.5rem 2rem;
 }
 
 .baseline {
-    height: 1px;
     width: 80%;
-    
-    background-color: black;
+    height: 1px;
 
     margin: 0 auto;
+
+    background-color: black;
 }

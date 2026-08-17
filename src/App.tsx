@@ -1,11 +1,12 @@
 import { Route, Routes } from "react-router-dom"
 
 import Navbar from "./components/Navbar/Navbar"
+import NavbarDesktop from "./components/NavbarDesktop/NavbarDesktop"
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop"
+
 import About from "./pages/About/About"
 import Gallery from "./pages/Gallery/Gallery"
 import Home from "./pages/Home/Home"
-import NavbarDesktop from "./components/NavbarDesktop/NavbarDesktop"
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop"
 
 import styles from "./App.module.css"
 
@@ -25,12 +26,12 @@ function App() {
       </div>
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/gallery" element={<Gallery/>}/>
       </Routes>
-    </>
 
+    </>
   )
 }
 

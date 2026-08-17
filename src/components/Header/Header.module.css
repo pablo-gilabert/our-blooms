@@ -3,16 +3,16 @@
     justify-content: center;
 
     width: 80%;
-
     margin: 0 auto;
+}
+
+.logoTablet,
+.logoDesktop {
+    display: none;
 }
 
 .logo img {
     margin-top: 2rem;
-}
-
-.logoTablet, .logoDesktop {
-    display: none;
 }
 
 @media (min-width: 768px) {
@@ -26,7 +26,6 @@
         justify-content: center;
 
         width: 80%;
-
         margin: 0 auto;
     }
 
@@ -46,9 +45,7 @@
         justify-content: center;
 
         width: 80%;
-        margin: 0 auto;
-
-        margin-top: 5rem;
+        margin: 5rem auto 0;
     }
 
     .logoDesktop img {

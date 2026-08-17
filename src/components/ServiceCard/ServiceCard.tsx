@@ -1,10 +1,8 @@
+import type { Service } from "../../types/Service"
+
 import styles from "./ServiceCard.module.css"
 
-interface ServiceCardProps {
-  id?: number
-  img: string
-  title: string
-  subtitle: string
+interface ServiceCardProps extends Service {
   variant?: "home" | "gallery"
 }
 
@@ -21,6 +19,7 @@ const ServiceCard = ({
 }: ServiceCardProps) => {
 
   return (
+
     <article
       className={`${styles.card} ${
         variant === "gallery" ? styles.cardGallery : ""
@@ -28,7 +27,7 @@ const ServiceCard = ({
     >
 
       {/* Displays the service identifier only in the Home variant. */}
-      {variant === "home" && id !== undefined && (
+      {variant === "home" && (
         <span className={styles.id}>{id}</span>
       )}
 
