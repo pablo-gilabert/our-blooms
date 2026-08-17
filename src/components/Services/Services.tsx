@@ -2,15 +2,13 @@ import ServiceCard from "../ServiceCard/ServiceCard"
 
 import type { Service } from "../../types/Service"
 
+// Props allow the same renderer to consume Home services or Gallery services.
 interface ServicesProps {
   services: Service[]
   variant?: "home" | "gallery"
 }
 
-// Services component.
-//
-// Receives a collection of services and renders a ServiceCard
-// for each item using the selected layout variant.
+// Services maps a service collection into reusable ServiceCard components.
 const Services = ({
   services,
   variant = "home",
@@ -20,6 +18,7 @@ const Services = ({
 
     <article>
 
+      {/* Each service becomes one card while its id supplies the React key. */}
       {services.map((service) => (
 
         <ServiceCard

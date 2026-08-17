@@ -1,3 +1,4 @@
+/* Four-column desktop navigation: brand plus three equally styled links. */
 .navbar {
     display: grid;
     grid-template-columns: 4fr 2fr 2fr 2fr;
@@ -15,6 +16,7 @@
     font-weight: var(--font-black);
 }
 
+/* Shared typography and alignment for all desktop navigation links. */
 .home,
 .gallery,
 .about {
@@ -37,6 +39,7 @@
     grid-column: 4;
 }
 
+/* Full-width separator under the navigation row. */
 .baseline {
     grid-column: 1 / -1;
     justify-self: center;

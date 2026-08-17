@@ -1,5 +1,7 @@
 import type { Service } from "../types/Service"
 
+// Gallery-specific service content uses the same Service interface as Home,
+// allowing Services to switch presentation through the variant prop.
 const servicesGallery: Service[] = [
   {
     id: 0,

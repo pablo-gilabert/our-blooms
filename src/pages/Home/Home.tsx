@@ -7,6 +7,7 @@ import services from "../../data/services"
 
 import styles from "./Home.module.css"
 
+// Home composes the landing page from reusable sections and decorative artwork.
 const Home = () => {
 
   return (
@@ -55,6 +56,7 @@ const Home = () => {
           <div className={styles.baseline}></div>
         </div>
 
+        {/* Services receives the Home data and uses the Home card variant. */}
         <Services 
           services={services}
           variant="home"

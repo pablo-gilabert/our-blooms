@@ -2,6 +2,7 @@ import Footer from "../../components/Footer/Footer"
 
 import styles from "./About.module.css"
 
+// About presents the brand story, founder information, historical imagery and closing copy.
 const About = () => {
 
   return (
@@ -11,6 +12,7 @@ const About = () => {
 
       <p className={styles.subtitle}>OUR STORY</p>
 
+      {/* Founder image and identity share a two-column layout on larger screens. */}
       <div className={styles.introGrid}>
         <div className={styles.ownerImage}>
           <img
@@ -29,12 +31,14 @@ const About = () => {
         Our Blooms was founded in honor of Lily Smith's loving aunts, Teresa and Beth.
       </h2>
 
+      {/* Three supporting story images become a grid at the tablet breakpoint. */}
       <div className={styles.gridImages}>
         <img src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786656658/Image_01_r8htli.png"/>
         <img src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786656657/Image_02_msbslq.png"/>
         <img src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786656657/Image_03_qv5fh6.png"/>
       </div>
 
+      {/* First section of narrative copy. */}
       <div className={styles.historyContainer}>
         <p className={styles.history}>
           Lily's journey with flowers began in the heart of Oregon, amidst the flourishing fields 
@@ -51,10 +55,12 @@ const About = () => {
         </p>
       </div>
 
+      {/* Decorative visual break between story sections. */}
       <div className={styles.breakerImage}>
         <img src="https://res.cloudinary.com/t1xhl1kz/image/upload/v1786681647/Image_breaker_fq5kny.png"/>
       </div>
 
+      {/* Closing section of narrative copy before the footer. */}
       <div className={styles.historyContainer}>
         <p className={styles.history}>
           From humble beginnings, Bloom&Co has grown into a beloved local destination, known 

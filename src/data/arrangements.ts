@@ -1,5 +1,7 @@
 import type { Arrangement } from "../types/Arrangement"
 
+// Arrangement data is kept separate from presentation so the Gallery can render
+// the catalogue through reusable components without hardcoding each card in JSX.
 const arrangements: Arrangement[] = [
   {
     id: 0,

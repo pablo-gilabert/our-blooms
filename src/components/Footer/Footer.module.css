@@ -1,3 +1,4 @@
+/* Mobile footer image is centered and separated from page content. */
 .footer {
     display: flex;
     justify-content: center;
@@ -6,6 +7,7 @@
     margin: 8rem auto 0;
 }
 
+/* Tablet and desktop variants stay hidden until their breakpoints. */
 .footerTablet,
 .footerDesktop {
     display: none;

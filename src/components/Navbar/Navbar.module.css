@@ -1,3 +1,4 @@
+/* Mobile navbar uses two columns: brand on the left and menu control on the right. */
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -23,11 +24,13 @@
     margin-right: 2rem;
 }
 
+/* The icon inherits its size from these SVG dimensions. */
 .menu svg {
     width: 2rem;
     height: 2rem;
 }
 
+/* Dropdown is collapsed by default and expands through max-height/opacity transitions. */
 .dropdown {
     grid-column: 1 / -1;
 
@@ -46,6 +49,7 @@
         padding 0.4s ease;
 }
 
+/* navbarOpen is added by React when the hamburger menu is open. */
 .navbarOpen .dropdown {
     max-height: 400px;
     padding: 1rem 2rem;
@@ -53,6 +57,7 @@
     opacity: 1;
 }
 
+/* Separator remains below both the closed and expanded navigation content. */
 .baseline {
     grid-column: 1 / -1;
     justify-self: center;

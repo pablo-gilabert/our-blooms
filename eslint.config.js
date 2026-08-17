@@ -5,6 +5,8 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
+// ESLint applies JavaScript, TypeScript, React Hooks and React Refresh rules
+// to the project's TypeScript source files while ignoring build output.
 export default defineConfig([
   globalIgnores(['dist']),
   {

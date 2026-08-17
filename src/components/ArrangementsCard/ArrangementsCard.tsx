@@ -2,6 +2,7 @@ import type { Arrangement } from "../../types/Arrangement"
 
 import styles from "./ArrangementsCard.module.css"
 
+// ArrangementsCard presents one arrangement's name, price and image.
 const ArrangementsCard = ({
   title,
   price,
@@ -12,6 +13,7 @@ const ArrangementsCard = ({
 
     <article className={styles.card}>
 
+      {/* Text content is kept separate from the image so CSS can reposition either area. */}
       <div className={styles.container}>
 
         <h1 className={styles.title}>{title}</h1>
@@ -19,6 +21,7 @@ const ArrangementsCard = ({
 
       </div>
 
+      {/* The image wrapper controls the card's image sizing and alignment. */}
       <div className={styles.image}>
 
         <img

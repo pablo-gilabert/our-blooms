@@ -1,5 +1,7 @@
+/* Load the project's primary typeface from Google Fonts. */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Global design tokens used throughout the application. */
 :root {
     --button-color: rgb(255, 200, 0);
 
@@ -12,6 +14,7 @@
     --font-black: 900;
 }
 
+/* Basic box-model and spacing reset shared by every element. */
 *,
 *::before,
 *::after {
@@ -20,15 +23,18 @@
     padding: 0;
 }
 
+/* Keep browser scrolling smooth for in-page movement. */
 html {
     scroll-behavior: smooth;
 }
 
+/* Establish the minimum page height and global font family. */
 body {
     min-height: 100vh;
     font-family: var(--font-primary);
 }
 
+/* Prevent media elements from overflowing their containers. */
 img,
 picture,
 video,
@@ -37,6 +43,7 @@ svg {
     max-width: 100%;
 }
 
+/* Make form controls inherit the project's typography. */
 button,
 input,
 textarea,
@@ -44,15 +51,18 @@ select {
     font: inherit;
 }
 
+/* Give interactive buttons the expected pointer cursor. */
 button {
     cursor: pointer;
 }
 
+/* Remove default link styling so components control their own appearance. */
 a {
     color: inherit;
     text-decoration: none;
 }
 
+/* Remove browser bullets/numbers from lists. */
 ul,
 ol {
     list-style: none;

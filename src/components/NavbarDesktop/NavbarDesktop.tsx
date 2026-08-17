@@ -2,8 +2,10 @@ import { NavLink } from "react-router-dom"
 
 import styles from "./NavbarDesktop.module.css"
 
+// Desktop navigation keeps all links visible without a hamburger menu.
 const NavbarDesktop = () => {
 
+  // Reset the viewport even when the user clicks the route they are already on.
   const handleNavigation = () => {
     window.scrollTo(0, 0)
   }

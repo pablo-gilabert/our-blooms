@@ -1,3 +1,4 @@
+/* About page heading hierarchy. */
 .title {
     margin: 2rem 0 0 2rem;
 
@@ -12,6 +13,7 @@
     font-weight: var(--font-semibold);
 }
 
+/* Founder and decorative images share the same base width and spacing. */
 .ownerImage,
 .breakerImage {
     width: 90%;
@@ -34,6 +36,7 @@
     text-align: start;
 }
 
+/* Story images stack on mobile and become a three-column grid later. */
 .gridImages {
     width: 80%;
     margin: 5rem auto 0;
@@ -58,6 +61,7 @@
 
 @media (min-width: 768px) {
 
+    /* Founder information moves beside the founder image. */
     .introGrid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

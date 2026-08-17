@@ -1,7 +1,9 @@
+/* Home is a vertical grid that lets its sections stack naturally. */
 .home {
     display: grid;
 }
 
+/* Mobile decorative images are centered and share the same vertical rhythm. */
 .image,
 .purpleFlower {
     display: flex;
@@ -14,6 +16,7 @@
     margin-top: 10rem;
 }
 
+/* Text section that introduces the services list. */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -46,6 +49,7 @@
     margin-bottom: 3rem;
 }
 
+/* Tablet and desktop versions are hidden until their breakpoints. */
 .imageTablet,
 .purpleFlowerTablet,
 .imageDesktop,
@@ -60,6 +64,7 @@
         display: none;
     }
 
+    /* Tablet artwork replaces mobile artwork. */
     .imageTablet,
     .purpleFlowerTablet {
         display: flex;
@@ -84,6 +89,7 @@
         display: none;
     }
 
+    /* Desktop artwork replaces the tablet composition. */
     .imageDesktop,
     .purpleFlowerDesktop {
         display: flex;

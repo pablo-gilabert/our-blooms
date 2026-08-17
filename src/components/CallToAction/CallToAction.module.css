@@ -1,3 +1,4 @@
+/* Defines the reusable call-to-action block and centers all of its content. */
 .section {
     width: 80%;
     margin: 10rem auto 0;
@@ -16,6 +17,7 @@
     font-weight: var(--font-bold);
 }
 
+/* The link is styled as the section's primary action button. */
 .button {
     padding: 0.5rem 1rem;
 

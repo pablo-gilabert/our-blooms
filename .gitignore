@@ -1,4 +1,4 @@
-# Logs
+# Ignore runtime logs and generated npm/package-manager logs.
 logs
 *.log
 npm-debug.log*
@@ -7,12 +7,13 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Ignore installed dependencies, build output and local environment files.
 node_modules
 dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# Ignore editor/project metadata that should not be committed.
 .vscode/*
 !.vscode/extensions.json
 .idea

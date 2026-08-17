@@ -1,5 +1,7 @@
 import type { Service } from "../types/Service"
 
+// Services shown on Home. Keeping the content in data files lets the same
+// ServiceCard component handle rendering without hardcoded content in the page.
 const services: Service[] = [
   {
     id: 1,

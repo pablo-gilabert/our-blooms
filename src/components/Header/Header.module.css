@@ -1,3 +1,4 @@
+/* Default mobile header composition. */
 .logo {
     display: grid;
     justify-content: center;
@@ -6,6 +7,7 @@
     margin: 0 auto;
 }
 
+/* Larger-screen compositions remain hidden by default. */
 .logoTablet,
 .logoDesktop {
     display: none;
@@ -17,6 +19,7 @@
 
 @media (min-width: 768px) {
 
+    /* Swap the mobile artwork for the tablet artwork. */
     .logo {
         display: none;
     }
@@ -36,6 +39,7 @@
 
 @media (min-width: 1280px) {
 
+    /* Swap the tablet artwork for the desktop artwork. */
     .logoTablet {
         display: none;
     }

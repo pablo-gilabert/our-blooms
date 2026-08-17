@@ -1,3 +1,4 @@
+/* Gallery page heading hierarchy. */
 .title {
     margin: 2rem 0 0 2rem;
 
@@ -12,6 +13,7 @@
     font-weight: var(--font-semibold);
 }
 
+/* Services section heading is spaced away from the arrangements list. */
 .h2 {
     margin: 5rem 0 1.5rem 2rem;
 
@@ -19,6 +21,7 @@
     font-weight: var(--font-semibold);
 }
 
+/* Full-width visual separator used before the Gallery services list. */
 .baseline {
     width: 80%;
     height: 1px;

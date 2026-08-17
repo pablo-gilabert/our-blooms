@@ -1,3 +1,4 @@
+/* Center both the text area and image area inside each arrangement card. */
 .container,
 .image {
     display: flex;
@@ -5,12 +6,14 @@
     align-content: center;
 }
 
+/* Size and center the arrangement image. */
 .image {
     margin: 0 auto;
     width: 90%;
     margin-top: 0.6rem;
 }
 
+/* Position the arrangement title and price as one text block. */
 .container {
     width: 80%;
     margin-top: 3rem;

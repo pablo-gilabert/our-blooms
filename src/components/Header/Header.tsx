@@ -1,5 +1,7 @@
 import styles from "./Header.module.css"
 
+// Header provides separate image compositions for mobile, tablet and desktop.
+// CSS decides which composition is visible at each breakpoint.
 const Header = () => {
 
   return (

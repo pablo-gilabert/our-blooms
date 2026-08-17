@@ -1,3 +1,4 @@
+/* Base service card layout used by the Home presentation. */
 .card {
     display: grid;
 }
@@ -52,6 +53,7 @@
     margin-top: 3rem;
 }
 
+/* Gallery uses larger images while keeping the same card markup. */
 .cardGallery img {
     width: 80%;
 }
@@ -70,6 +72,7 @@
 
 @media (min-width: 1280px) {
 
+    /* Gallery cards become a two-column/two-row composition on large screens. */
     .cardGallery {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
